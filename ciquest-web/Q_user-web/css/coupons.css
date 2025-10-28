@@ -1,0 +1,136 @@
+.coupon-container {
+  padding: 60px 12px 80px;
+  background: linear-gradient(180deg, #f7fbff 0%, #eaf4ff 100%);
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+/* ポイントボックス */
+.point-box {
+  text-align: center;
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.point-box p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #5078a0;
+}
+
+.point-box h2 {
+  margin: 4px 0 0;
+  color: #007aff;
+  font-size: 1.6em;
+}
+
+/* セクションタイトル */
+.coupon-section h3 {
+  font-size: 1em;
+  margin: 10px 0 8px;
+  color: #1d3557;
+}
+
+/* クーポンリスト */
+.coupon-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+
+.coupon-item {
+  background: white;
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coupon-info h4 {
+  margin: 0;
+  color: #1d3557;
+  font-size: 1em;
+}
+
+.coupon-info p {
+  margin: 4px 0 0;
+  font-size: 0.85em;
+  color: #6b7b8c;
+}
+
+.exchange-btn {
+  background: #007aff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 0.85em;
+  transition: 0.2s;
+}
+
+.exchange-btn:hover {
+  background: #005fcc;
+}
+
+.used {
+  background: #e6e6e6;
+  color: #999;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;            /* ← これが重要！ */
+  width: 100%;        /* 全幅に広げる */
+  margin: 0;          /* 予防的にリセット */
+  padding: 6px 0;
+  background: linear-gradient(180deg, #f9fcff 0%, #e3f2ff 100%);
+  border-top: 1px solid #c2e0ff;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+}
+/* ボタン全体 */
+.nav-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: #5078a0; /* 空の影のような落ち着いた青 */
+  font-size: 0.8em;
+  font-weight: 500;
+  padding: 6px 0;
+  transition: all 0.2s ease;
+}
+
+/* アイコン部分 */
+.nav-btn span {
+  font-size: 1.25em;
+  margin-bottom: 2px;
+}
+
+/* アクティブ時 */
+.nav-btn.active {
+  color: #007aff; /* 鮮やかな青 */
+  font-weight: bold;
+  transform: translateY(-1px);
+  text-shadow: 0 0 3px rgba(0, 122, 255, 0.3);
+}
+
+/* タップ時のフィードバック */
+.nav-btn:active {
+  background-color: rgba(0, 122, 255, 0.08);
+  border-radius: 10px;
+}

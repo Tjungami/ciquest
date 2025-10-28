@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>統計 - CiQuest オーナー</title>
+
+  <!-- 共通CSS -->
+  <link rel="stylesheet" href="../../css/base/base.css">
+  <link rel="stylesheet" href="../../css/owner/common.css">
+
+  <!-- このページ専用CSS -->
+  <link rel="stylesheet" href="../../css/owner/stats.css">
+</head>
+
+<body>
+  <header>
+    <h1>店舗統計</h1>
+    <nav>
+      <a href="dashboard.html">ホーム</a>
+      <a href="create_challenge.html">チャレンジ作成</a>
+      <a href="my_challenges.html">チャレンジ一覧</a>
+      <a href="stamp_settings.html">スタンプ設定</a>
+      <a href="stats.html" class="active">統計</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="stats-overview">
+      <h2>店舗全体の統計</h2>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h3>総チャレンジ参加者</h3>
+          <p id="totalParticipants">125人</p>
+        </div>
+        <div class="stat-card">
+          <h3>平均クリア率</h3>
+          <p id="clearRate">68%</p>
+        </div>
+        <div class="stat-card">
+          <h3>総スタンプ取得数</h3>
+          <p id="totalStamps">1,240個</p>
+        </div>
+        <div class="stat-card">
+          <h3>クーポン利用数</h3>
+          <p id="couponUsage">85枚</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="chart-section">
+      <h2>ユーザー来店推移</h2>
+      <canvas id="userTrendChart"></canvas>
+    </section>
+
+    <section class="ranking-section">
+      <h2>人気チャレンジランキング</h2>
+      <ol id="challengeRanking">
+        <li>写真を撮って投稿しよう！</li>
+        <li>QRを読み取ってポイントGET</li>
+        <li>来店チェックインチャレンジ</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 CiQuest Owner Panel</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../../js/owner/stats.js"></script>
+  <script src="../../js/common/navigation.js"></script>
+
+</body>
+</html>
