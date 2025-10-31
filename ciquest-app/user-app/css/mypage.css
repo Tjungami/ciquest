@@ -1,0 +1,145 @@
+.mypage-container {
+  padding: 60px 12px 80px;
+  background: linear-gradient(180deg, #f7fbff 0%, #eaf4ff 100%);
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+/* プロフィールセクション */
+.profile-section {
+  text-align: center;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.profile-icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 2px solid #c2e0ff;
+}
+
+.profile-section h2 {
+  margin: 0;
+  color: #1d3557;
+  font-size: 1.2em;
+}
+
+.profile-section p {
+  margin: 6px 0 0;
+  color: #5078a0;
+  font-size: 0.95em;
+}
+
+/* バッジセクション */
+.badge-section h3 {
+  font-size: 1em;
+  margin-bottom: 8px;
+  color: #1d3557;
+}
+
+.badge-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.badge {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  font-size: 1.4em;
+}
+
+/* 設定 */
+.settings-section h3 {
+  font-size: 1em;
+  margin-bottom: 8px;
+  color: #1d3557;
+}
+
+.settings-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.settings-btn {
+  width: 100%;
+  text-align: left;
+  background: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: #1d3557;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: background 0.2s;
+}
+
+.settings-btn:hover {
+  background: #e3f2ff;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;            /* ← これが重要！ */
+  width: 100%;        /* 全幅に広げる */
+  margin: 0;          /* 予防的にリセット */
+  padding: 6px 0;
+  background: linear-gradient(180deg, #f9fcff 0%, #e3f2ff 100%);
+  border-top: 1px solid #c2e0ff;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+}
+/* ボタン全体 */
+.nav-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: #5078a0; /* 空の影のような落ち着いた青 */
+  font-size: 0.8em;
+  font-weight: 500;
+  padding: 6px 0;
+  transition: all 0.2s ease;
+}
+
+/* アイコン部分 */
+.nav-btn span {
+  font-size: 1.25em;
+  margin-bottom: 2px;
+}
+
+/* アクティブ時 */
+.nav-btn.active {
+  color: #007aff; /* 鮮やかな青 */
+  font-weight: bold;
+  transform: translateY(-1px);
+  text-shadow: 0 0 3px rgba(0, 122, 255, 0.3);
+}
+
+/* タップ時のフィードバック */
+.nav-btn:active {
+  background-color: rgba(0, 122, 255, 0.08);
+  border-radius: 10px;
+}

@@ -1,0 +1,151 @@
+/* ===== 検索ページ 全体 ===== */
+.search-container {
+  padding: 60px 12px 80px;
+  background: linear-gradient(180deg, #f7fbff 0%, #eaf4ff 100%);
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+/* ===== 検索バー ===== */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#search-input {
+  width: 100%;
+  max-width: 420px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #c2e0ff;
+  background: white;
+  font-size: 1em;
+  outline: none;
+  transition: box-shadow 0.2s;
+}
+
+#search-input:focus {
+  box-shadow: 0 0 6px rgba(0, 122, 255, 0.3);
+}
+
+/* ===== タグフィルタ ===== */
+.filter-tags {
+  display: flex;
+  gap: 8px;
+  margin: 14px 0;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.tag {
+  padding: 6px 12px;
+  border: 1px solid #c2e0ff;
+  border-radius: 20px;
+  background: white;
+  color: #5078a0;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.tag.active {
+  background: #007aff;
+  color: white;
+  border-color: #007aff;
+}
+
+/* ===== 検索結果リスト ===== */
+.store-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.store-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.15s ease;
+}
+
+.store-item:hover {
+  transform: translateY(-2px);
+}
+
+.store-info h3 {
+  margin: 0;
+  font-size: 1em;
+  color: #1d3557;
+}
+
+.store-info p {
+  margin: 4px 0 0;
+  font-size: 0.85em;
+  color: #6b7b8c;
+}
+
+.detail-btn {
+  border: none;
+  background: none;
+  color: #007aff;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;            /* ← これが重要！ */
+  width: 100%;        /* 全幅に広げる */
+  margin: 0;          /* 予防的にリセット */
+  padding: 6px 0;
+  background: linear-gradient(180deg, #f9fcff 0%, #e3f2ff 100%);
+  border-top: 1px solid #c2e0ff;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+}
+/* ボタン全体 */
+.nav-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: #5078a0; /* 空の影のような落ち着いた青 */
+  font-size: 0.8em;
+  font-weight: 500;
+  padding: 6px 0;
+  transition: all 0.2s ease;
+}
+
+/* アイコン部分 */
+.nav-btn span {
+  font-size: 1.25em;
+  margin-bottom: 2px;
+}
+
+/* アクティブ時 */
+.nav-btn.active {
+  color: #007aff; /* 鮮やかな青 */
+  font-weight: bold;
+  transform: translateY(-1px);
+  text-shadow: 0 0 3px rgba(0, 122, 255, 0.3);
+}
+
+/* タップ時のフィードバック */
+.nav-btn:active {
+  background-color: rgba(0, 122, 255, 0.08);
+  border-radius: 10px;
+}
