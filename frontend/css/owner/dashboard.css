@@ -1,0 +1,97 @@
+/* --- ダッシュボード --- */
+
+.overview {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 25px;
+}
+
+.store-info p {
+  margin: 8px 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.qr-btn {
+  background: #0078d7;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.qr-btn:hover {
+  background: #005ea8;
+}
+
+/* --- チャレンジ一覧 --- */
+
+.challenges table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.challenges th, .challenges td {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.challenges th {
+  background: #f2f5fa;
+  color: #333;
+  font-weight: bold;
+}
+
+/* --- モーダル --- */
+
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  width: 320px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.modal-content img {
+  width: 220px;
+  height: 220px;
+  margin: 10px 0;
+}
+
+.modal-content h3 {
+  margin-bottom: 10px;
+  color: #0078d7;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.hidden {
+  display: none !important;
+}

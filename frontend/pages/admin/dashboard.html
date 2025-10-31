@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Ciquest 運営ダッシュボード</title>
+  <link rel="stylesheet" href="../../css/base/base.css">
+  <link rel="stylesheet" href="../../css/admin/dashboard.css">
+</head>
+<body>
+  <header class="admin-header">
+    <h1>Ciquest 管理ダッシュボード</h1>
+    <nav>
+      <a href="stores.html">店舗承認</a>
+      <a href="challenges.html">チャレンジ管理</a>
+      <a href="coupons.html">クーポン管理</a>
+      <a href="inquiries.html">お問い合わせ</a>
+    </nav>
+  </header>
+
+  <main class="admin-dashboard">
+    <section class="summary">
+      <h2>概要</h2>
+      <div class="summary-grid">
+        <div class="summary-card" id="pendingStores">承認待ち店舗: 読み込み中...</div>
+        <div class="summary-card" id="totalChallenges">チャレンジ数: 読み込み中...</div>
+        <div class="summary-card" id="totalCoupons">クーポン数: 読み込み中...</div>
+      </div>
+    </section>
+
+    <section class="recent">
+      <h2>最近の承認申請</h2>
+      <div id="recentStores"></div>
+    </section>
+  </main>
+
+  <script src="../../js/admin/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+.stores-page {
+  padding: 2rem;
+}
+
+.tab-menu {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tab {
+  background-color: #A7CEE6;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  font-weight: bold;
+  color: #1a4e75;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tab.active {
+  background-color: #89BDDE;
+  color: white;
+}
+
+.store-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.store-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.store-info {
+  max-width: 70%;
+}
+
+.store-actions button {
+  margin-left: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.approve-btn {
+  background-color: #7ecb8b;
+  color: white;
+}
+
+.reject-btn {
+  background-color: #e57373;
+  color: white;
+}
